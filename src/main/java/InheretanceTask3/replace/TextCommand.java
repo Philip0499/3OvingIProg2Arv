@@ -1,3 +1,6 @@
+package InheretanceTask3.replace;
+
+
 /**
  * interface TextCommand -
  * Interface of the class
