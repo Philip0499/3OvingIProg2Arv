@@ -37,15 +37,15 @@ public class ReplaceTextCommand implements TextCommand {
         if (target.isBlank()){
             throw new IllegalArgumentException("Target can not be blank");
         }
+        if (replacement.isBlank()){
+            throw new IllegalArgumentException("Replacement can not be blank");
+        }
         this.target = target;
         this.replacement = replacement;
 
     }
     @Override
     public String execute(String text) {
-        if (text == null) {
-            throw new IllegalArgumentException("Text can not be null");
-        }
         return text.replace(target, replacement);
     }
 }
