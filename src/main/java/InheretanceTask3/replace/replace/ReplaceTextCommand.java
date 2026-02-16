@@ -3,30 +3,36 @@ package InheretanceTask3.replace.replace;
 import InheretanceTask3.replace.TextCommand;
 
 /**
- * Oppsett: Husk å fjern og spørre om det er sånn det skal være
- *
- * private String....
- * konstruktør som sjekker litt ting og tang.
- *
- * Gettere for morror skyld
- *
- * execute?
- *
+ * This class is the one that changes all instances of changed texts.
+ * This class secures that nesessatu values are awaiable
  *
  */
 
 public class ReplaceTextCommand implements TextCommand {
+
+    // protected makes it possible for other sub-classes to retrive them.
     protected String target;
     protected String replacement;
 
+
+    /**
+     *
+     * @return target will search for target to change
+     * @return replacement will input a new change
+     */
     public String getTarget() {
         return target;
     }
-
     public String getReplacement() {
         return replacement;
     }
 
+
+    /**
+     * Valdates ReplaceTextCommand
+     * @param target can not be null or blank
+     * @param replacement can not be null or blank
+     */
     public ReplaceTextCommand(String target, String replacement) {
         if (target == null) {
             throw new IllegalArgumentException("Target can not be null");
@@ -44,6 +50,11 @@ public class ReplaceTextCommand implements TextCommand {
         this.replacement = replacement;
 
     }
+    /**
+     * Will perform the change in the text, but only the first change in the text is changed.
+     * @param text The text.
+     * @return Will return the orginal text or new text depending on the target.
+     */
     @Override
     public String execute(String text) {
         return text.replace(target, replacement);
