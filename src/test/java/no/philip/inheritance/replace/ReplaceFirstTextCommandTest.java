@@ -1,4 +1,4 @@
-package InheretanceTask3.replace.replace;
+package no.philip.inheritance.replace;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,6 +1,6 @@
-package InheretanceTask3.replace.replace;
+package no.philip.inheritance.replace;
 
-import InheretanceTask3.replace.wrap.WrapTextCommand;
+import no.philip.inheritance.wrap.WrapTextCommand;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

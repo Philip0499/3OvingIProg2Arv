@@ -1,4 +1,4 @@
-package InheretanceTask3.replace.wrap;
+package no.philip.inheritance.wrap;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,4 +1,4 @@
-package InheretanceTask3.replace;
+package no.philip.inheritance;
 
 
 /**

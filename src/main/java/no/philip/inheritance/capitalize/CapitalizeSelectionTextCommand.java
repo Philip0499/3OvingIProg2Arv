@@ -1,12 +1,8 @@
-package InheretanceTask3.replace.wrap;
+package no.philip.inheritance.capitalize;
 
-public class WrapSelectionTextCommand extends WrapTextCommand {
+public class CapitalizeSelectionTextCommand extends CapitalizeTextCommand{
 
-    protected String selection;
-
-    public WrapSelectionTextCommand(String opening, String end, String selection) {
-        super(opening, end);
-
+    public CapitalizeSelectionTextCommand(String selection) {
         if (selection == null) {
             throw new IllegalArgumentException("Selection can not be null");
         }
@@ -14,7 +10,6 @@ public class WrapSelectionTextCommand extends WrapTextCommand {
             throw new IllegalArgumentException("Selection can not be blank");
         }
         this.selection = selection;
-
     }
     public String getSelection() {
         return selection;
@@ -22,7 +17,14 @@ public class WrapSelectionTextCommand extends WrapTextCommand {
 
     @Override
     public String execute(String text) {
-        String result = opening + selection + end;
-        return text.replace(selection, result);
+        return text;
     }
+
+    String capitalize = super.execute(this.selection);
+
+    return text.replace(this.selection, capitalize) {
+        return selection;
+    }
+
+
 }

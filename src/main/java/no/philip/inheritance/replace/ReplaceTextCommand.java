@@ -1,16 +1,16 @@
-package InheretanceTask3.replace.replace;
+package no.philip.inheritance.replace;
 
-import InheretanceTask3.replace.TextCommand;
+import no.philip.inheritance.TextCommand;
 
 /**
- * This class is the one that changes all instances of changed texts.
- * This class secures that nesessatu values are awaiable
+ *  ReplaceTextCommand class is replacing all text that shares the attributes
+ *  searched for by the user.
  *
  */
 
 public class ReplaceTextCommand implements TextCommand {
 
-    // protected makes it possible for other sub-classes to retrive them.
+    // protected makes it possible for other subclasses to retrieve them.
     protected String target;
     protected String replacement;
 
@@ -53,7 +53,7 @@ public class ReplaceTextCommand implements TextCommand {
     /**
      * Will perform the change in the text, but only the first change in the text is changed.
      * @param text The text.
-     * @return Will return the orginal text or new text depending on the target.
+     * @return Will return the original text or new text depending on the target.
      */
     @Override
     public String execute(String text) {

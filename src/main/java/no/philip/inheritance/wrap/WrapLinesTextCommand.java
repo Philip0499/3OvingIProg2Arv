@@ -1,4 +1,4 @@
-package InheretanceTask3.replace.wrap;
+package no.philip.inheritance.wrap;
 
 /**
  * The WrapLinesTextCommand class inherits from WrapTextCommand and

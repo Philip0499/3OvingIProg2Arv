@@ -1,5 +1,5 @@
-package InheretanceTask3.replace.wrap;
-import InheretanceTask3.replace.TextCommand;
+package no.philip.inheritance.wrap;
+import no.philip.inheritance.TextCommand;
 
 /**
  * WrapTextCommand implements the interface TextCommand and makes it
