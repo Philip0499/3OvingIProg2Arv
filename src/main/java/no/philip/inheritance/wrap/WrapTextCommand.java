@@ -51,5 +51,9 @@ public class WrapTextCommand implements TextCommand {
     public String execute(String text){
         return opening + text + end; // ChatGPT
     }
-
+    
+    @Override
+    public String execute(String text) {
+        return opening + text + end;
+    }
 }
