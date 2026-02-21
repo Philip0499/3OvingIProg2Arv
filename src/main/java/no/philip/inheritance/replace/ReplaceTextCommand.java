@@ -14,7 +14,6 @@ public class ReplaceTextCommand implements TextCommand {
     protected String target;
     protected String replacement;
 
-
     /**
      *
      * @return target will search for target to change
@@ -26,7 +25,6 @@ public class ReplaceTextCommand implements TextCommand {
     public String getReplacement() {
         return replacement;
     }
-
 
     /**
      * Valdates ReplaceTextCommand

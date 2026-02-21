@@ -10,16 +10,9 @@ class ReplaceTextCommandTest {
     @Test
     void textThatExecuteWorksRight() {
         ReplaceTextCommand command = new ReplaceTextCommand("Yeet", "Skeet");
-        String result = command.execute("What are you Yeet today.");
+        String result = command.execute("The cool new word is Yeet and that beqause Yeet is cool.");
         System.out.println("Result from test: " + result);
-        assertEquals("What are you Skeet today.", result);
-    }
-
-    @Test
-    void testGetOpeningAndEndMethodes() {
-        WrapTextCommand textCommand = new WrapTextCommand("start", "end");
-        assertEquals("start", textCommand.getOpening());
-        assertEquals("end", textCommand.getEnd());
+        assertEquals("The cool new word is Skeet and that beqause Skeet is cool.", result);
     }
 
     @Test

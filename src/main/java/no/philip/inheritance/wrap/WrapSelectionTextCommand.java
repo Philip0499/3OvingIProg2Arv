@@ -1,5 +1,11 @@
 package no.philip.inheritance.wrap;
 
+/**
+ * WrapSelectionTextCommand is about wrapping a chosen text.
+ * This means that it will not take the whole text and replace it,
+ * But it will take the |
+ */
+
 public class WrapSelectionTextCommand extends WrapTextCommand {
 
     protected String selection;

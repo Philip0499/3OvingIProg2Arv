@@ -1,5 +1,4 @@
 package no.philip.inheritance.wrap;
-
 /**
  * The WrapLinesTextCommand class inherits from WrapTextCommand and
  * wrapes each line of the given text
