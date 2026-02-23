@@ -1,20 +1,27 @@
 package no.philip.inheritance.wrap;
-/**
- * The WrapLinesTextCommand class inherits from WrapTextCommand and
- * wrapes each line of the given text
- *
- * This class hva e constructor that takes in both the opening and closing lines
- */
 
+/**
+ * WrapLinesTextCommand wraps each line iin a text with an opening or closing string
+ * F.eks: can "that is god/bad depending on" become .....<p>god</p>\n<p>bad</p>...
+ * Integrates from WrapTextCommand.
+ */
 public class WrapLinesTextCommand extends WrapTextCommand {
 
+
+    /**
+     * Creates a new WrapLinesTectCommand with an opening and ending string
+     * @param opening String, can not be null or blank
+     * @param end String, can not be null or blank
+     */
     public WrapLinesTextCommand(String opening, String end) {
         super(opening, end);
     }
 
-
     /**
      *
+     * @param text that is worked on, can not be null or blank
+     * @return the text for each line, wraped with an opening or end.
+     * @throws IllegalArgumentException if text is null or blank.
      */
 
     @Override
