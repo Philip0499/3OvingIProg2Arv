@@ -13,6 +13,10 @@ public class WrapLinesTextCommand extends WrapTextCommand {
     }
 
 
+    /**
+     *
+     */
+
     @Override
     public String execute(String text) {
 

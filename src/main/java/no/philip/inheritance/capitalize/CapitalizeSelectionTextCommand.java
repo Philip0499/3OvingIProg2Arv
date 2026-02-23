@@ -18,9 +18,6 @@ public class CapitalizeSelectionTextCommand extends CapitalizeTextCommand {
     }
     @Override
     public String execute(String text) {
-        if (text == null) {
-            throw new IllegalArgumentException("Text can not be null");
-        }
         String capitalized = super.execute(selection);
         return text.replace(selection, capitalized);
     }

@@ -6,6 +6,9 @@ import no.philip.inheritance.TextCommand;
  *  ReplaceTextCommand class is replacing all text that shares the attributes
  *  searched for by the user.
  *
+ *  F.eks: The word "hello hello how are you" can become "bye bye how are you"
+ *  if the target wor d is "hello" and replacement is "bye"
+ *
  */
 
 public class ReplaceTextCommand implements TextCommand {
@@ -25,6 +28,7 @@ public class ReplaceTextCommand implements TextCommand {
     public String getReplacement() {
         return replacement;
     }
+
 
     /**
      * Valdates ReplaceTextCommand
